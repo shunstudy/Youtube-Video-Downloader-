@@ -1,8 +1,16 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+
+  const inputvalue = (event) =>{
+    const input =event.target.value;
+
+    console.log(input);
+  }
+
+
+
   return (
     <div className={styles.container}>
       <Head>
@@ -17,8 +25,10 @@ export default function Home() {
       </div> 
       <div>
         <label className={styles.search}>Search Here, </label>
-        <input className={styles.inputBox} type="text" placeholder='Paste The URL'></input>
-        <input className={styles.submit} type="submit"></input>
+        <form action='http://localhost:3000/download/' method="GET">
+        <input className={styles.inputBox} type="text"  onChange={inputvalue} name="url"  placeholder='https://www.youtube.com/watch?v=B31LgI4Y4DQ&t=1213s'></input>
+        <input className={styles.submit} value="Download" type="submit"></input>
+        </form>
       </div>
       
 
