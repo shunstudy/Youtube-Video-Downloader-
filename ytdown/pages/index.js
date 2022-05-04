@@ -12,8 +12,8 @@ export default function Home() {
       </Head>
 
 
-      <div class="container">
-            <h3 class={styles.animatecharcter}>Youtube Video Downloader</h3>
+      <div className="container">
+            <h3 className={styles.animatecharcter}>Youtube Video Downloader</h3>
       </div> 
       <div>
         <label className={styles.search}>Search Here, </label>
