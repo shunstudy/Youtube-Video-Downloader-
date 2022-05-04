@@ -71,6 +71,42 @@
   }
 }
 
+@media screen and (max-width:450px) {
+  .animatecharcter{
+    text-align: center;
+    font-size: 30px;
+  }
+  .inputBox{
+    position: absolute;
+    top: 23rem;
+    left: 1rem;
+    border-radius: 25px;
+    border: none;
+    height: 40px;
+    width: 360px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  .submit{
+    position: absolute;
+    top: 26.7rem;
+    left: 1rem;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    color: #eaeaea;
+    background-color: #0070f3;
+    width: 120px;
+  }
+  .search{
+  font-size: 34px;
+    position: absolute;
+    left: 9.5rem;
+    top: 13rem;
+  }
+  
+}
 
 .footer {
   display: flex;
